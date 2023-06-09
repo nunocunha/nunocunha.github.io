@@ -1,0 +1,161 @@
+/*** Start-up animation ***/
+
+@keyframes appear {
+	0%   {opacity: 0.0;}
+	100% {opacity: 1.0;}
+}
+
+
+
+@-o-keyframes appear {
+	0%   {opacity: 0.0;}
+	100% {opacity: 1.0;}
+}
+
+
+
+@-moz-keyframes appear {
+	0%   {opacity: 0.0;}
+	100% {opacity: 1.0;}
+}
+
+
+
+@-webkit-keyframes appear {
+	0%   {opacity: 0.0;}
+	100% {opacity: 1.0;}
+}
+
+
+body {
+	opacity: 1.0;
+	animation: appear 2.0s 1;
+}
+
+
+/*** Hovering animation ***/
+
+
+@keyframes fade-in {
+	0%   {opacity: 0.4;}
+	100% {opacity: 1.0;}
+}
+
+@keyframes fade-out {
+	0%   {opacity: 1.0;}
+	100% {opacity: 0.4;}
+}
+
+
+
+@-o-keyframes fade-in {
+	0%   {opacity: 0.4;}
+	100% {opacity: 1.0;}
+}
+
+@-o-keyframes fade-out {
+	0%   {opacity: 1.0;}
+	100% {opacity: 0.4;}
+}
+
+
+
+@-moz-keyframes fade-in {
+	0%   {opacity: 0.4;}
+	100% {opacity: 1.0;}
+}
+
+@-moz-keyframes fade-out {
+	0%   {opacity: 1.0;}
+	100% {opacity: 0.4;}
+}
+
+
+
+@-webkit-keyframes fade-in {
+	0%   {opacity: 0.4;}
+	100% {opacity: 1.0;}
+}
+
+@-webkit-keyframes fade-out {
+	0%   {opacity: 1.0;}
+	100% {opacity: 0.4;}
+}
+
+
+
+#links > a[href] {
+	opacity: 0.4;
+	animation: fade-out 0.3s 1;
+}
+
+#links > a[href]:hover,
+#links > a[href]:focus {
+	opacity: 1.0;
+	animation: fade-in 0.3s 1;
+}
+
+
+/*** Sliding animation ***/
+
+
+@keyframes slide-in {
+	0%   {bottom: 5%; opacity: 0.0;}
+	100% {bottom: 35%; opacity: 1.0;}
+}
+
+@keyframes slide-out {
+	0%   {bottom: 35%; opacity: 1.0;}
+	100% {bottom: 5%; opacity: 0.0;}
+}
+
+
+
+@-o-keyframes slide-in {
+	0%   {bottom: 5%; opacity: 0.0;}
+	100% {bottom: 35%; opacity: 1.0;}
+}
+
+@-o-keyframes slide-out {
+	0%   {bottom: 35%; opacity: 1.0;}
+	100% {bottom: 5%; opacity: 0.0;}
+}
+
+
+
+@-moz-keyframes slide-in {
+	0%   {bottom: 5%; opacity: 0.0;}
+	100% {bottom: 35%; opacity: 1.0;}
+}
+
+@-moz-keyframes slide-out {
+	0%   {bottom: 35%; opacity: 1.0;}
+	100% {bottom: 5%; opacity: 0.0;}
+}
+
+
+
+@-webkit-keyframes slide-in {
+	0%   {bottom: 5%; opacity: 0.0;}
+	100% {bottom: 35%; opacity: 1.0;}
+}
+
+@-webkit-keyframes slide-out {
+	0%   {bottom: 35%; opacity: 1.0;}
+	100% {bottom: 5%; opacity: 0.0;}
+}
+
+
+
+#logo #logo-text {
+	bottom: 5%;
+	opacity: 0.0;
+	animation: slide-out 0.5s 1;
+}
+
+#logo:hover #logo-text,
+#logo:focus #logo-text {
+	bottom: 35%;
+	opacity: 1.0;
+	animation: slide-in 0.5s 1;
+}
